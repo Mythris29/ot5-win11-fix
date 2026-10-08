@@ -1,5 +1,5 @@
 // Oregon Trail 5th Edition compatibility layer for Windows 10/11 (proxy winmm.dll).
-// Runs the stock GOG OT5.EXE windowed at 2x: scales the main window, selected dialogs and Bink
+// Runs the stock (unpatched) OT5.EXE windowed at 2x: scales the main window, selected dialogs and Bink
 // movies, remaps mouse input, stops the desktop resolution switch, keeps the game running when
 // it loses focus, and fixes the Save/Load working-directory bug. 32-bit, CRT-free.
 #include <windows.h>

@@ -1,7 +1,7 @@
 # The Oregon Trail 5th Edition — Windows 10/11 fix and 2× scaler
 
-A drop-in `winmm.dll` that makes the GOG release of **The Oregon Trail 5th Edition** (2001)
-run cleanly on modern Windows, in a 1280×960 window instead of a 640×480 one.
+A drop-in `winmm.dll` that makes **The Oregon Trail 5th Edition** (2001, retail CD) run cleanly
+on modern Windows, in a 1280×960 window instead of a 640×480 one.
 
 No game files are modified. Delete the two files below and the game is exactly as it was.
 
@@ -9,7 +9,7 @@ No game files are modified. Delete the two files below and the game is exactly a
 
 1. Download `winmm.dll` and `OT5.exe.manifest` from the latest release.
 2. Copy both into the game folder, next to `OT5.EXE`.
-3. Run `OT5.EXE` (or launch from GOG Galaxy as usual).
+3. Run `OT5.EXE`.
 
 To uninstall, delete those two files.
 
@@ -29,12 +29,14 @@ wagon-train picker, resting, and system dialogs such as the quit confirmation.
 
 ## Requirements
 
-- The **GOG** version of The Oregon Trail 5th Edition. Built and tested against `OT5.EXE`
-  MD5 `a652e8afd07e798b62bbbbe6d7f17309`. Other releases are untested.
+- The Oregon Trail 5th Edition, installed from the 2001 retail CD. Built and tested against
+  `OT5.EXE` MD5 `a652e8afd07e798b62bbbbe6d7f17309`. If yours differs, it may still work;
+  please open an issue either way.
 - Windows 10 or 11. Tested on Windows 11 at 100% display scaling. At higher scaling Windows
   will stretch the window further (it is DPI-unaware by design), which may look soft.
 
-GOG ships its own `ddraw.dll` in the game folder. Leave it; with this fix nothing loads it.
+If your game folder already has a `ddraw.dll` (some installers add DDrawCompat or similar),
+you can leave it; with this fix nothing loads it.
 
 ## Files
 
@@ -77,7 +79,7 @@ committed, so you only need to rerun the generator if Windows adds winmm exports
 
 ## Legal
 
-Not affiliated with or endorsed by Houghton Mifflin Harcourt, The Learning Company or GOG.
+Not affiliated with or endorsed by Houghton Mifflin Harcourt or The Learning Company.
 "The Oregon Trail" is a trademark of its owner. This repository contains no game files, no
 game code and no Microsoft files — you need your own copy of the game.
 
